@@ -1,5 +1,5 @@
 geopy==2.3
-ortools==9.4.1874
+ortools==9.12.9540
 streamlit==1.37.0
 protobuf==3.20.2
 pip==23.3
