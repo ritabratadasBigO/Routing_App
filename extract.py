@@ -115,9 +115,8 @@ def f4(url):
 
 def f5(url):
     '''Remove '?entry=ttu' from the end of the url.'''
-    # url = re.sub("\?entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D", '', url)
-    url = re.sub(r"\9?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D", '', url)
-
+    # url = re.sub(r"\?entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D", '', url)
+    url = re.sub(r'\?entry=ttu.*', '', url)
     url = url.split('3e0?')[0]
     return url
 
